@@ -5,22 +5,36 @@
     <link rel="stylesheet" href="style.css">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Dictionary</title>
+    <meta name="description" content="Dictionary project">
+    <meta name="keywords" content="HTML, CSS, JavaScript, Free Dictionary API">
+    <meta name="author" content="Ankush Patil">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Merienda&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
+
+    <div style="background-color: cadetblue; margin: 0px; color: white;">
+        <h1 id="dict" style="margin: 0px; text-align: right; margin-right: 25%;">Free Dictionary</h1>
+    </div>
     <div id="header">
-        <input class="formElem" type="text" id="inputWord" placeholder="Search a word here">
-        <button class="formElem" type="submit" id="goSearch">Go!</button>
+        <div id="form">
+            <input class="formElem" type="text" id="inputWord" placeholder="Search a word here">
+            <button class="formElem" type="submit" id="goSearch">Go!</button>
+        </div>
     </div>
     <div id="dynamicMain">
         <div id="info">
-            <h3 id="searchedWord">placeholder</h3> 
-            <h3 id="phonetic">[phonetic]</h3>  <h3 id="pronounce"><i class="fas fa-volume-up"></i></h3>
+            <h3 id="searchedWord"> </h3> <!-- Searched key--> 
+            <h3 id="phonetic"></h3> <!-- [phonetic]-->
+            <div id="audio_wrapper"> 
+                <button id="pronounce"></button>
+                <audio id="aud" precompute="auto" src=""></audio>
+            </div>
         </div>
+        <p id="origin"></p>
         <hr>
         <!-- <h4 class="subheadings">Definitions</h4>
         <div id="defs">
@@ -35,7 +49,7 @@
             </ol>
         </div> -->
         <div id="cards">
-            
+
         </div>
             
 

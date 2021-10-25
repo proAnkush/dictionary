@@ -8,16 +8,22 @@ hr{
     width: 60%;
     height: 1px;
     background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+    margin-bottom: 40px;
 }
 .fa-volume-up{
     color: blue;
-    margin-left: 20px;
     font-size: 30px;
+}
+#pronounce{
+    margin-left: 10px;
+    background: none;
+    border: none;
 }
 #header{
     background-color: cadetblue;
+    align-items: center;
     text-align: right;
-    text-align: -webkit-right;  
+    text-align: -webkit-right;
     font-size: 24px;
     padding-right: 25%;
     padding-top: 10px;
@@ -75,22 +81,29 @@ input:focus, textarea:focus, select:focus{
 #phonetic{
     padding-left: 30px;
     font-size: 20px;
-    font-family: "Merienda";
+    font-family: Arial, Helvetica, sans-serif;;
     text-transform: capitalize;
     text-decoration: unset;
 }
 .subheadings{
-    font-size: 30px;
+    font-size: 18px;
     letter-spacing: 1px;
     text-transform: capitalize;
-    margin-bottom: 0;
+    margin-top: 5px;
+    margin-left: 5px;
+    margin-bottom: 10px;
+    opacity: 80%;
+}
+#origin{
+    opacity: 60%;
 }
 .content{
     padding-left: 20px;
 }
 .example{
-    padding-left: 10px;
+    padding-left: 40px;
     opacity: 50%;
+    margin-bottom: 50px;
 }
 #dynamicMain{
     display: flex;
@@ -98,8 +111,6 @@ input:focus, textarea:focus, select:focus{
     width: 60%;
     margin: auto;
     padding: 1%;
-    border-left: 2px dashed blue;
-    border-right: 2px dashed blue;
 }
 #info{
     display: flex;
@@ -107,4 +118,10 @@ input:focus, textarea:focus, select:focus{
     margin-top: auto;
     margin-right: auto;
     align-items: center;
+}
+.pcard{
+    padding: 10px;
+    box-shadow: 0px 0px 6px blue;
+    margin-bottom: 18px;
+    border-radius: 10px;
 }
