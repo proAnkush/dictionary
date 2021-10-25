@@ -1,5 +1,5 @@
 # Dictionary
-A dictionary, where searching for a word gives structured results like :
+A minimalist dictionary application, where searching for a word gives structured results like :
 <ul>
 <li>Phonetics</li>
 <li>Audio pronounciation</li>
@@ -9,6 +9,8 @@ A dictionary, where searching for a word gives structured results like :
 <li>Example usages</li>
 </ul>
 <br>
+
+[<h2><b>Live Preview</b></h2>](https://proankush.github.io/dictionary/)
 
 ## API
 [Free Dictionary API](https://dictionaryapi.dev/)
