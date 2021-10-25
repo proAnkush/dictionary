@@ -2,8 +2,17 @@ body{
     margin: 0;
     font-family: "Merienda";
 }
+hr{
+    margin-top: 0;
+    border: 0;
+    width: 60%;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+}
 .fa-volume-up{
     color: blue;
+    margin-left: 20px;
+    font-size: 30px;
 }
 #header{
     background-color: cadetblue;
@@ -61,8 +70,10 @@ input:focus, textarea:focus, select:focus{
     font-size: 36px;
     font-family: Arial, Helvetica, sans-serif;
     text-transform: capitalize;
+    margin: 0;
 }
 #phonetic{
+    padding-left: 30px;
     font-size: 20px;
     font-family: "Merienda";
     text-transform: capitalize;
@@ -77,6 +88,10 @@ input:focus, textarea:focus, select:focus{
 .content{
     padding-left: 20px;
 }
+.example{
+    padding-left: 10px;
+    opacity: 50%;
+}
 #dynamicMain{
     display: flex;
     flex-direction: column;
@@ -85,4 +100,11 @@ input:focus, textarea:focus, select:focus{
     padding: 1%;
     border-left: 2px dashed blue;
     border-right: 2px dashed blue;
+}
+#info{
+    display: flex;
+    flex-direction: row;
+    margin-top: auto;
+    margin-right: auto;
+    align-items: center;
 }
